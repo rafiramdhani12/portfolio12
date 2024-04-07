@@ -3,7 +3,7 @@ import foto from "../assets/muka.jpg";
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-[1200px]  mx-auto py-8 border-2 p-5 mb-10 text-white">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-[1200px]  mx-auto py-8  p-5 mb-10 text-white">
       <div className="col-span-1 my-auto mx-auto w-[300px] h-auto lg:w-[400px]">
         <img src={foto} alt="" width={300} className="md:ml-10 rounded-3xl" />
       </div>
