@@ -20,10 +20,12 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
+import Navbar from "@/component/Navbar";
 
-const Work = () => {
+const Workk = () => {
   return (
     <>
+      <Navbar />
       <div
         className="max-w-[1200px] mx-auto p-10 border-2 border-black text-white"
         id="Work">
@@ -34,7 +36,7 @@ const Work = () => {
             check out some of my recent work
           </p>
         </div>
-        <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-4 items-center flex justify-center">
+        <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-4 items-center">
           <div className="transorm transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center  h-[200px] bg-cover relative">
             <img src={foto} alt="" />
 
@@ -208,4 +210,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Workk;

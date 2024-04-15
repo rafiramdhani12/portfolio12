@@ -19,7 +19,7 @@ import {
 
 const About = () => {
   return (
-    <div className=" max-w-[1200px] mx-auto my-12" id="About">
+    <div className=" max-w-[1200px] mx-auto my-12">
       <div className="md:grid md:grid-cols-2 sm:py-16">
         <div className="mt-4 md:mt-0 text-left flex">
           <div className="my-auto mx-6">
@@ -47,7 +47,7 @@ const About = () => {
                             <SelectContent>
                               <p>Next Js</p>
                               <p>Laravel</p>
-                              <p>React Js</p>
+                              <p>Vite</p>
                             </SelectContent>
                           </Select>
                         </div>
