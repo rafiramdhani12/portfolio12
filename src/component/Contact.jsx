@@ -1,9 +1,7 @@
 const Contact = () => {
   return (
     <>
-      <div
-        className="max-w-[1200px] mx-auto sm:py-20 p-5 border-2 border-black mt-5 mb-5"
-        id="Contact">
+      <div className="max-w-[1200px] mx-auto sm:py-20 p-5 border-2 border-black mt-5 mb-5">
         <div className="text-center">
           <h2 className="text-4xl font-bold leading-tight primary-color">
             contact me

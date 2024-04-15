@@ -33,16 +33,18 @@ const Navbar = () => {
               ? "fixed h-full left-0 top-0 w-[60%] bg-[#202121] ease-in-out duration-500"
               : "fixed left-[-100%]"
           }>
-          <h1 className="text-3xl primary-color m-4">Rafi Ramdhani</h1>
+          <h1 className="text-3xl primary-color m-4">
+            <Link to={"/"}>Rafi Ramdhani</Link>{" "}
+          </h1>
           <ul className="p-8 text-2xl">
             <li className="p-2">
-              <a href="#About">About</a>
+              <Link to={"/about"}>About</Link>
             </li>
             <li className="p-2">
-              <a href="#Work">Work</a>
+              <Link to={"/work"}>Work</Link>
             </li>
             <li className="p-2">
-              <a href="#Contact">Contact</a>
+              <Link to={"/contact"}>Contact</Link>
             </li>
           </ul>
         </div>

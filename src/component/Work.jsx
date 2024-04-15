@@ -24,9 +24,7 @@ import {
 const Work = () => {
   return (
     <>
-      <div
-        className="max-w-[1200px] mx-auto p-10 border-2 border-black text-white"
-        id="Work">
+      <div className="max-w-[1200px] mx-auto p-10 border-2 border-black text-white">
         <div className="pb-8">
           <p className="text-4xl mb-3 font-bold primary-color">work</p>
           <p className="font-bold text-2xl">
