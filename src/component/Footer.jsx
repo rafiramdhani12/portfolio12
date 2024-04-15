@@ -7,7 +7,7 @@ const Footer = () => {
         <span className="primary-color text-2xl font-bold">Rafi Ramdhani</span>
         <p className="">rafiramdhani75@gmail.com</p>
       </div>
-      <div className=" max-w-[200px] sm:h-[150px] p-12 flex justify-start mx-auto border-2 border-black text-white gap-10 ">
+      <div className=" max-w-[200px] sm:h-[150px] p-12 flex justify-center mx-auto border-2 border-black text-white gap-10 ">
         <a
           href="https://www.instagram.com/vrsdsffcnt?igsh=Y2jvbmhqd3Nod2Nr"
           target="_blank"
