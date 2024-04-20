@@ -23,6 +23,12 @@ const Navbar = () => {
           <li className="p-5">
             <Link to={"/contact"}>Contact</Link>
           </li>
+          <li className="p-5">
+            <Link
+              to={"https://3d-portfolio-rafis-projects-3c351dc8.vercel.app/"}>
+              3D
+            </Link>
+          </li>
         </ul>
         <div onClick={handleNav} className="block md:hidden mr-6">
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}

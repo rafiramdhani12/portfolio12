@@ -1,5 +1,6 @@
 import {TypeAnimation} from "react-type-animation";
 import foto from "../assets/muka.jpg";
+import {Link} from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -28,15 +29,16 @@ const Hero = () => {
         </p>
         <div className="flex justify-center items-center text-center">
           <a
-            href="/"
+            href="Hero.jsx"
+            download={"Hero.jsx"}
             className="px-6 py-3 w-full rounded-xl  bg-gradient-to-br from-orange-500 to-pink-500 ">
             Download CV
           </a>
-          <a
-            href="/#Contact"
+          <Link
+            to={"/contact"}
             className="px-6 py-3 w-full rounded-xl  border border-gray-400 hover:bg-gradient-to-br from-orange-500 to-pink-500 hover:border-none mx-10">
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </div>

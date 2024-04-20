@@ -12,7 +12,6 @@ import {
 import {
   AlertDialog,
   AlertDialogAction,
-  AlertDialogCancel,
   AlertDialogContent,
   AlertDialogDescription,
   AlertDialogFooter,
@@ -32,7 +31,7 @@ const Work = () => {
             check out some of my recent work
           </p>
         </div>
-        <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-4 items-center flex justify-center">
+        <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-4 items-center ">
           <div className="transorm transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center  h-[200px] bg-cover relative">
             <img src={foto} alt="" />
 
@@ -49,19 +48,20 @@ const Work = () => {
                         <AlertDialogTitle>Anime List</AlertDialogTitle>
                         <AlertDialogDescription>
                           <img src={foto} className="hover:scale-150" />
-                          <p className="font-bold text-lg">
+                          <p className="font-bold text-lg mt-2">
                             this is my another project i try fullstack beginner
                             next js creating anime list{" "}
                           </p>
+                          <br />
                           <a
-                            href=""
-                            className="text-orange-400 underline font-bold text-lg hover:text-red-600">
+                            href="https://anime-list-blue-six.vercel.app/"
+                            className="text-orange-400 underline font-bold text-xl hover:text-red-600">
                             and this my link to visit my project
                           </a>
                         </AlertDialogDescription>
                       </AlertDialogHeader>
                       <AlertDialogFooter>
-                        <AlertDialogAction>Continue</AlertDialogAction>
+                        <AlertDialogAction>Back</AlertDialogAction>
                       </AlertDialogFooter>
                     </AlertDialogContent>
                   </AlertDialog>
@@ -84,18 +84,19 @@ const Work = () => {
                         <AlertDialogTitle>Blog web app</AlertDialogTitle>
                         <AlertDialogDescription>
                           <img src={foto2} alt="" />
-                          <p className="font-bold text-lg">
+                          <p className="font-bold text-lg mt-2">
                             i build this web app blog with cms sanity{" "}
                           </p>
+                          <br />
                           <a
-                            href=""
+                            href="https://rafiblog.vercel.app/"
                             className="text-orange-400 underline font-bold text-lg hover:text-red-600">
                             and this my link to visit my project
                           </a>
                         </AlertDialogDescription>
                       </AlertDialogHeader>
                       <AlertDialogFooter>
-                        <AlertDialogAction>Continue</AlertDialogAction>
+                        <AlertDialogAction>Back</AlertDialogAction>
                       </AlertDialogFooter>
                     </AlertDialogContent>
                   </AlertDialog>
@@ -118,15 +119,20 @@ const Work = () => {
                         <AlertDialogTitle>Movie List</AlertDialogTitle>
                         <AlertDialogDescription>
                           <img src={foto3} alt="" />
-                          <p className="text-lg font-bold">
+                          <p className="text-lg font-bold mt-2">
                             this is my another project build a movie list with
                             next js supabase Next auth and shadcn ui
                           </p>
+                          <br />
+                          <a
+                            href=""
+                            className="text-orange-400 underline font-bold text-lg hover:text-red-600">
+                            and this my link to visit my project
+                          </a>
                         </AlertDialogDescription>
                       </AlertDialogHeader>
                       <AlertDialogFooter>
-                        <AlertDialogCancel>Cancel</AlertDialogCancel>
-                        <AlertDialogAction>Continue</AlertDialogAction>
+                        <AlertDialogAction>Back</AlertDialogAction>
                       </AlertDialogFooter>
                     </AlertDialogContent>
                   </AlertDialog>
@@ -149,7 +155,7 @@ const Work = () => {
                         <AlertDialogTitle>Movie List</AlertDialogTitle>
                         <AlertDialogDescription>
                           <img src={foto4} alt="" />
-                          <p className="text-lg font-bold">
+                          <p className="text-lg font-bold mt-2">
                             this is my another portfolio i try and learn a
                             underated library from js this is a three js for
                             your info if my 3d portfolio didnt render this
@@ -157,16 +163,17 @@ const Work = () => {
                             this tutor video i watch its not happen in their
                             browser
                           </p>
+                          <br />
                           <a
                             target="_blank"
                             href="https://3d-portfolio-rafis-projects-3c351dc8.vercel.app/"
-                            className="text-orange-500 hover:text-red-500">
+                            className="text-orange-500 hover:text-red-500 font-bold text-xl underline">
                             and this my link to visit my project
                           </a>
                         </AlertDialogDescription>
                       </AlertDialogHeader>
                       <AlertDialogFooter>
-                        <AlertDialogAction>Continue</AlertDialogAction>
+                        <AlertDialogAction>Back</AlertDialogAction>
                       </AlertDialogFooter>
                     </AlertDialogContent>
                   </AlertDialog>

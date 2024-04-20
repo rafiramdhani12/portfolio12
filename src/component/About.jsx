@@ -10,12 +10,6 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
-import {
-  Select,
-  SelectContent,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 
 const About = () => {
   return (
@@ -39,22 +33,24 @@ const About = () => {
                         This is a few framework what i learn it now
                       </AlertDialogTitle>
                       <AlertDialogDescription>
-                        <div className="flex justify-center text-center my-10 ">
-                          <Select>
-                            <SelectTrigger className="w-[180px]">
-                              <SelectValue placeholder="Framework" />
-                            </SelectTrigger>
-                            <SelectContent>
-                              <p>Next Js</p>
-                              <p>Laravel</p>
-                              <p>Vite</p>
-                            </SelectContent>
-                          </Select>
+                        <div className="flex my-10 flex-wrap gap-4">
+                          <div className="bg-black text-white p-5 flex gap-4">
+                            <img src="/nextjs.png" alt="" width={100} />
+                            <p className="text-xl my-auto">Next js</p>
+                          </div>
+                          <div className="bg-black text-white p-5 flex gap-4">
+                            <img src="/laravel.png" alt="" width={100} />
+                            <p className="text-xl my-auto">Laravel</p>
+                          </div>
+                          <div className="bg-black text-white p-5 flex gap-4">
+                            <img src="/vite.png" alt="" width={90} />
+                            <p className="text-xl my-auto">vite</p>
+                          </div>
                         </div>
                       </AlertDialogDescription>
                     </AlertDialogHeader>
                     <AlertDialogFooter>
-                      <AlertDialogAction>Continue</AlertDialogAction>
+                      <AlertDialogAction>Back</AlertDialogAction>
                     </AlertDialogFooter>
                   </AlertDialogContent>
                 </AlertDialog>
