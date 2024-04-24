@@ -19,6 +19,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
+import {Link} from "react-router-dom";
 
 const Work = () => {
   return (
@@ -105,10 +106,10 @@ const Work = () => {
             </div>
           </div>
           <div className="transorm transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center  h-[200px] bg-cover relative">
-            <img src={foto3} alt="" />
+            <img src="/store.png" alt="" />
             <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
               <span className="text-2xl font-bold text-white tracking-wider">
-                MovieList
+                FakeStore API
               </span>
               <div className="pt-8 text-center">
                 <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
@@ -116,19 +117,20 @@ const Work = () => {
                     <AlertDialogTrigger>Open</AlertDialogTrigger>
                     <AlertDialogContent>
                       <AlertDialogHeader>
-                        <AlertDialogTitle>Movie List</AlertDialogTitle>
+                        <AlertDialogTitle>FakeStore API</AlertDialogTitle>
                         <AlertDialogDescription>
-                          <img src={foto3} alt="" />
+                          <img src="/store.png" alt="" />
                           <p className="text-lg font-bold mt-2">
-                            this is my another project build a movie list with
-                            next js supabase Next auth and shadcn ui
+                            this is my another project build a ecommerce with
+                            FakeStore API
                           </p>
                           <br />
-                          <a
-                            href=""
+                          <Link
+                            target="_blank"
+                            to="https://result-belajar-react.vercel.app/"
                             className="text-orange-400 underline font-bold text-lg hover:text-red-600">
                             and this my link to visit my project
-                          </a>
+                          </Link>
                         </AlertDialogDescription>
                       </AlertDialogHeader>
                       <AlertDialogFooter>

@@ -1,6 +1,14 @@
 import {TypeAnimation} from "react-type-animation";
 import foto from "../assets/muka.jpg";
 import {Link} from "react-router-dom";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Hero = () => {
   return (
@@ -28,12 +36,23 @@ const Hero = () => {
           development since 6 mounth ago
         </p>
         <div className="flex justify-center items-center text-center">
-          <a
-            href="Hero.jsx"
-            download={"Hero.jsx"}
-            className="px-6 py-3 w-full rounded-xl  bg-gradient-to-br from-orange-500 to-pink-500 ">
-            Download CV
-          </a>
+          <div className="px-6 py-3 w-full rounded-xl  bg-gradient-to-br from-orange-500 to-pink-500">
+            <DropdownMenu>
+              <DropdownMenuTrigger>Download CV</DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <a href="Old cv.pdf" download={"Old cv.pdf"}>
+                  <DropdownMenuLabel>Download Cv</DropdownMenuLabel>
+                </a>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem>Or visit my web CV</DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <Link to={"https://cv-ecru-nu.vercel.app/"}>
+                  <DropdownMenuLabel>Web Cv</DropdownMenuLabel>
+                </Link>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </div>
+
           <Link
             to={"/contact"}
             className="px-6 py-3 w-full rounded-xl  border border-gray-400 hover:bg-gradient-to-br from-orange-500 to-pink-500 hover:border-none mx-10">
