@@ -16,7 +16,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import {Link} from "react-router-dom";
-import {Project} from "@/DataSet";
+import {AnProject, Project} from "@/DataSet";
 
 const Work = () => {
   return (
@@ -82,11 +82,11 @@ const Work = () => {
         </h1>
         <Carousel>
           <CarouselContent>
-            {Project.map((carosel) => {
+            {AnProject.map((carosel) => {
               return (
                 <>
-                  <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                    <img src={carosel.img} />
+                  <CarouselItem className="md:basis-1/2 lg:basis-1">
+                    <img src={carosel.img} alt="" />
                   </CarouselItem>
                 </>
               );

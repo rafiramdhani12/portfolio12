@@ -3,6 +3,8 @@ import Blog from "/blog.png";
 import APIstore from "/store.png";
 import tiga from "/3d.png";
 import forum from "/Forum.png";
+import dnd from "/dnd.png";
+
 export const Project = [
   {
     id: 1,
@@ -38,5 +40,15 @@ export const Project = [
     desc: " this is my another project i try make website like a forum ",
     img: forum,
     link: "https://forum-jade.vercel.app/",
+  },
+];
+
+export const AnProject = [
+  {
+    id: 1,
+    title: "drag and drop",
+    desc: "making drag and drop feature with js library",
+    img: dnd,
+    link: "",
   },
 ];
