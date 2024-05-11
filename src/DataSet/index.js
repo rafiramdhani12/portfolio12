@@ -4,6 +4,7 @@ import APIstore from "/store.png";
 import tiga from "/3d.png";
 import forum from "/Forum.png";
 import dnd from "/dnd.png";
+import CRUD_IMG from "/crud_image.png";
 
 export const Project = [
   {
@@ -49,6 +50,13 @@ export const AnProject = [
     title: "drag and drop",
     desc: "making drag and drop feature with js library",
     img: dnd,
+    link: "",
+  },
+  {
+    id: 2,
+    title: "CRUD image",
+    desc: "making a crud image with express js",
+    img: CRUD_IMG,
     link: "",
   },
 ];

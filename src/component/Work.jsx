@@ -2,8 +2,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import {
   AlertDialog,
@@ -29,7 +27,7 @@ const Work = () => {
             check out some of my recent work
           </p>
         </div>
-        <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-4 items-center ">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 items-center ">
           {Project.map((project) => {
             return (
               <>
@@ -77,23 +75,22 @@ const Work = () => {
         </div>
       </div>
       <div className="mt-8 max-w-[900px] mx-auto border-2 border-black p-10">
-        <h1 className="primary-color font-bold text-3xl mb-5">
+        <h1 className="primary-color font-bold text-3xl mb-10">
           My another projects
         </h1>
-        <Carousel>
-          <CarouselContent>
-            {AnProject.map((carosel) => {
+        <Carousel orientation="vertical">
+          <CarouselContent className="-mt-1 h-[400px] overflow-auto  scrollbar-hide">
+            {AnProject.map((project) => {
               return (
-                <>
-                  <CarouselItem className="md:basis-1/2 lg:basis-1">
-                    <img src={carosel.img} alt="" />
-                  </CarouselItem>
-                </>
+                <CarouselItem key={project.id}>
+                  <h1 className="text-white mb-2 font-bold text-3xl">
+                    {project.title}
+                  </h1>
+                  <img src={project.img} alt="" />
+                </CarouselItem>
               );
             })}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
         </Carousel>
       </div>
     </>
