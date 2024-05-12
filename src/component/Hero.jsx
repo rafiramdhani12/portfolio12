@@ -40,7 +40,7 @@ const Hero = () => {
             <DropdownMenu>
               <DropdownMenuTrigger>Download CV</DropdownMenuTrigger>
               <DropdownMenuContent>
-                <a href="Old cv.pdf" download={"Old cv.pdf"}>
+                <a href="CV.pdf" download={"CV.pdf"}>
                   <DropdownMenuLabel>Download Cv</DropdownMenuLabel>
                 </a>
                 <DropdownMenuSeparator />
