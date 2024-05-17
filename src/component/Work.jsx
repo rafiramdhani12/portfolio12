@@ -27,7 +27,7 @@ const Work = () => {
           {Project.map((project) => {
             return (
               <>
-                <div className="transorm transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center  h-[200px] bg-cover relative">
+                <div className="transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center  h-[200px] bg-cover relative">
                   <img src={project.img} alt="" />
                   <div className="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center">
                     <span className="text-2xl font-bold text-white tracking-wider">
@@ -50,7 +50,7 @@ const Work = () => {
                                 </p>
                                 <br />
                                 <Link
-                                  href={project.link}
+                                  to={project.link}
                                   className="text-orange-400 underline font-bold text-xl hover:text-red-600">
                                   and this my link to visit my project
                                 </Link>
