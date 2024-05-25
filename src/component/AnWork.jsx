@@ -14,7 +14,7 @@ const AnWork = (props) => {
           My another projects
         </h1>
         <Carousel orientation="vertical">
-          <CarouselContent className="-mt-1 h-[150px] md:h-[400px] overflow-auto  scrollbar-hide">
+          <CarouselContent className="-mt-1 h-[150px] lg:h-[400px] overflow-auto  scrollbar-hide">
             {AnProject.map((project) => {
               return (
                 <>

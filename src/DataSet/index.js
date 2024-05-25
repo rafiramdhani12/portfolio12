@@ -5,6 +5,7 @@ import tiga from "/3d.png";
 import forum from "/Forum.png";
 import dnd from "/dnd.png";
 import CRUD_IMG from "/crud_image.png";
+import video_call from "/video_call.png";
 
 export const Project = [
   {
@@ -36,11 +37,18 @@ export const Project = [
     link: "https://3d-portfolio-rafis-projects-3c351dc8.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     title: "Forum",
     desc: " this is my another project i try make website like a forum ",
     img: forum,
     link: "https://forum-jade.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "video call app",
+    desc: " this is my another project i try make a video call group website using zegocloud",
+    img: video_call,
+    link: "https://group-call.vercel.app/",
   },
 ];
 
