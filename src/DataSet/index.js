@@ -68,3 +68,21 @@ export const AnProject = [
     link: "",
   },
 ];
+
+export const UnDeployWork = [
+  {
+    id: 1,
+    title: "Flask CRUD",
+    link: "https://github.com/rafiramdhani12/flask-crud",
+  },
+  {
+    id: 2,
+    title: "REACT + PYTHON ",
+    link: "https://github.com/rafiramdhani12/flask_crud_baru",
+  },
+  {
+    id: 2,
+    title: "LEARNING REACT NATIVE",
+    link: "https://github.com/rafiramdhani12/belajar-react-native",
+  },
+];
