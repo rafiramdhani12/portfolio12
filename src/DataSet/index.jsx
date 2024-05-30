@@ -6,6 +6,8 @@ import forum from "/Forum.png";
 import dnd from "/dnd.png";
 import CRUD_IMG from "/crud_image.png";
 import video_call from "/video_call.png";
+import CodeDemo from "@/component/Demo";
+import {PReact, ReactNative, pythonCode} from "./file";
 
 export const Project = [
   {
@@ -73,16 +75,19 @@ export const UnDeployWork = [
   {
     id: 1,
     title: "Flask CRUD",
+    demo: <CodeDemo demo={pythonCode} />,
     link: "https://github.com/rafiramdhani12/flask-crud",
   },
   {
     id: 2,
     title: "REACT + PYTHON ",
+    demo: <CodeDemo demo={PReact} />,
     link: "https://github.com/rafiramdhani12/flask_crud_baru",
   },
   {
     id: 2,
     title: "LEARNING REACT NATIVE",
+    demo: <CodeDemo demo={ReactNative} />,
     link: "https://github.com/rafiramdhani12/belajar-react-native",
   },
 ];

@@ -25,6 +25,10 @@ const Undeploy = () => {
                       className="font-bold hover:text-yellow-400">
                       <strong>{work.link}</strong>
                     </Link>
+                    <div>
+                      the demo
+                      {work.demo}
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
