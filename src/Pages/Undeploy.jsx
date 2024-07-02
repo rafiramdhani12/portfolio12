@@ -12,7 +12,7 @@ const Undeploy = () => {
   return (
     <>
       <Navbar />
-      <div className="text-white container">
+      <div className="text-white md:container">
         {UnDeployWork.map((work) => {
           return (
             <>

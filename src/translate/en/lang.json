@@ -1,0 +1,5 @@
+{
+  "welcome": "My name is Rafi Ramdhani and I have just become a junior web developer",
+  "about": "My name is Rafi Ramdhani, and I graduated from MAN 2 Kota Bekasi. I have just become a junior web developer, and I recently graduated. I am very interested in technology, enjoy learning and developing, and I am eager to explore new things",
+  "more": "I hope this message finds you well. I wanted to touch base regarding my projects. Due to budget constraints, I haven't been able to deploy every project I work on. This is primarily because some projects require database configurations that cannot be accommodated by Vercel's platform. As you may know, deploying projects with database dependencies often involves additional costs and complexities, especially when using platforms like Vercel. Unfortunately, this has limited my ability to showcase all of my work online."
+}

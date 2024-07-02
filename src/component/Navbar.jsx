@@ -1,8 +1,24 @@
 import {useState} from "react";
+import {useTranslation} from "react-i18next";
 import {AiOutlineClose, AiOutlineMenu} from "react-icons/ai";
 import {Link} from "react-router-dom";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+
+  const {i18n} = useTranslation();
+
+  const changeLang = (lng) => {
+    i18n.changeLanguage(lng);
+  };
 
   const handleNav = () => {
     setNav(!nav);
@@ -29,7 +45,27 @@ const Navbar = () => {
               3D
             </Link>
           </li>
+          <li className="p-5">
+            <DropdownMenu>
+              <DropdownMenuTrigger>
+                <img src="./google.png" alt="" width={25} />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuLabel>Choose Language</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem>
+                  {" "}
+                  <button onClick={() => changeLang("en")}>English</button>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  {" "}
+                  <button onClick={() => changeLang("id")}>Indonesian</button>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </li>
         </ul>
+
         <div onClick={handleNav} className="block md:hidden mr-6">
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
@@ -51,6 +87,23 @@ const Navbar = () => {
             </li>
             <li className="p-2">
               <Link to={"/contact"}>Contact</Link>
+            </li>
+            <li className="p-2">
+              <DropdownMenu>
+                <DropdownMenuTrigger>Choose language</DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem>
+                    {" "}
+                    <button onClick={() => changeLang("en")}>English</button>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    {" "}
+                    <button onClick={() => changeLang("id")}>Indonesian</button>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </li>
           </ul>
         </div>

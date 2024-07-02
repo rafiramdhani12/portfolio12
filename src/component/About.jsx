@@ -10,19 +10,22 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
+import {useTranslation} from "react-i18next";
 
 const About = () => {
+  const {t} = useTranslation();
+
+  // const changeLang = (lng) => {
+  //   i18n.changeLanguage(lng);
+  // };
+
   return (
     <div className=" max-w-[1200px] mx-auto my-12">
       <div className="md:grid md:grid-cols-2 sm:py-16">
         <div className="mt-4 md:mt-0 text-left flex">
           <div className="my-auto mx-6">
             <h2 className="text-4xl font-bold mb-4 primary-color">About Me</h2>
-            <p className="text-base lg:text-lg text-white">
-              My name is Rafi Ramdhani im a junior web developer I just became a
-              web dev 6 months ago im freshgraduate from MAN 2 Kota Bekasi im
-              trying and learn how to be a good programmer in a future
-            </p>
+            <p className="text-base lg:text-lg text-white">{t("about")}</p>
             <div className="mt-5 ">
               <Button>
                 <AlertDialog>
