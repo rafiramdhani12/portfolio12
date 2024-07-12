@@ -40,10 +40,7 @@ const Navbar = () => {
             <Link to={"/contact"}>Contact</Link>
           </li>
           <li className="p-5">
-            <Link
-              to={"https://3d-portfolio-rafis-projects-3c351dc8.vercel.app/"}>
-              3D
-            </Link>
+            <Link to={"https://new-3d-portfolio-five.vercel.app/"}>3D</Link>
           </li>
           <li className="p-5">
             <DropdownMenu>
@@ -89,10 +86,7 @@ const Navbar = () => {
               <Link to={"/contact"}>Contact</Link>
             </li>
             <li className="p-2">
-              <Link
-                to={"https://3d-portfolio-rafis-projects-3c351dc8.vercel.app/"}>
-                3D
-              </Link>
+              <Link to={"https://new-3d-portfolio-five.vercel.app/"}>3D</Link>
             </li>
             <li className="p-2">
               <DropdownMenu>
