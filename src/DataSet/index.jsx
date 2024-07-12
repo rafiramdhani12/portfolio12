@@ -8,6 +8,7 @@ import CRUD_IMG from "/crud_image.png";
 import video_call from "/video_call.png";
 import CodeDemo from "@/component/Demo";
 import {PReact, ReactNative, pythonCode} from "./file";
+import JS from "/js.png";
 
 export const Project = [
   {
@@ -89,5 +90,60 @@ export const UnDeployWork = [
     title: "LEARNING REACT NATIVE",
     demo: <CodeDemo demo={ReactNative} />,
     link: "https://github.com/rafiramdhani12/belajar-react-native",
+  },
+];
+
+export const Language = [
+  {
+    id: 1,
+    lang: "JAVASCRIPT",
+    logo: JS,
+    color: "yellow",
+    width: 30,
+  },
+  {
+    id: 2,
+    lang: "CSS",
+    logo: "/css-3.png",
+    color: "sky",
+    width: 30,
+  },
+  {
+    id: 3,
+    lang: "PHP",
+    logo: "/php.png",
+    color: "purple",
+    width: 30,
+  },
+];
+
+export const Technology = [
+  {
+    id: 1,
+    tech: "NODE JS",
+    logo: "/programing.png",
+    color: "green",
+    width: 30,
+  },
+  {
+    id: 2,
+    tech: "TAILWIND CSS",
+    logo: "/tailwind.png",
+    color: "sky",
+    width: 40,
+  },
+  {
+    id: 3,
+    tech: "NEXT JS",
+    logo: "/Next.js.png",
+    color: "white",
+    width: 40,
+  },
+  {
+    id: 4,
+    tech: "REACT JS",
+    logo: "/atom.png",
+    color: "blue",
+    width: 30,
   },
 ];

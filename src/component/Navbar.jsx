@@ -72,7 +72,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed h-full left-0 top-0 w-[60%] bg-[#202121] ease-in-out duration-500"
+              ? "fixed h-full left-0 top-0 w-[60%] bg-[#202121]  ease-in-out duration-500"
               : "fixed left-[-100%]"
           }>
           <h1 className="text-3xl primary-color m-4">
@@ -89,15 +89,23 @@ const Navbar = () => {
               <Link to={"/contact"}>Contact</Link>
             </li>
             <li className="p-2">
+              <Link
+                to={"https://3d-portfolio-rafis-projects-3c351dc8.vercel.app/"}>
+                3D
+              </Link>
+            </li>
+            <li className="p-2">
               <DropdownMenu>
-                <DropdownMenuTrigger>Choose language</DropdownMenuTrigger>
+                <DropdownMenuTrigger>
+                  <img src="/google.png" alt="" width={45} className="mt-2" />
+                </DropdownMenuTrigger>
+
                 <DropdownMenuContent>
-                  <DropdownMenuLabel>My Account</DropdownMenuLabel>
-                  <DropdownMenuSeparator />
                   <DropdownMenuItem>
                     {" "}
                     <button onClick={() => changeLang("en")}>English</button>
                   </DropdownMenuItem>
+                  <DropdownMenuSeparator />
                   <DropdownMenuItem>
                     {" "}
                     <button onClick={() => changeLang("id")}>Indonesian</button>
