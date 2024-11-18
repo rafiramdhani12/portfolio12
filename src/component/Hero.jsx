@@ -1,18 +1,17 @@
 import {TypeAnimation} from "react-type-animation";
 import foto from "../assets/muka.jpg";
 import {Link} from "react-router-dom";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import {useTranslation} from "react-i18next";
 
 const Hero = () => {
   const {t} = useTranslation();
+
+  const downloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/CV.pdf";
+    link.download = "CV.pdf";
+    link.click();
+  };
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-[1200px]  mx-auto py-8  p-5 mb-10 text-white">
@@ -36,22 +35,11 @@ const Hero = () => {
         </h1>
         <p className=" sm:text-lg my-6 lg:text-xl">{t("welcome")}</p>
         <div className="flex justify-center items-center text-center">
-          <div className="px-6 py-3 w-full rounded-xl  bg-gradient-to-br from-orange-500 to-pink-500">
-            <DropdownMenu>
-              <DropdownMenuTrigger>Download CV</DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <a href="CV.pdf" download={"CV.pdf"}>
-                  <DropdownMenuLabel>Download Cv</DropdownMenuLabel>
-                </a>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>Or visit my web CV</DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <Link to={"https://cv-ecru-nu.vercel.app/"}>
-                  <DropdownMenuLabel>Web Cv</DropdownMenuLabel>
-                </Link>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
+          <button
+            className="px-6 py-3 w-full rounded-xl  bg-gradient-to-br from-orange-500 to-pink-500"
+            onClick={downloadCV}>
+            download cv
+          </button>
 
           <Link
             to={"/contact"}

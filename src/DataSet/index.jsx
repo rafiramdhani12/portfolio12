@@ -1,23 +1,15 @@
-import Animelist from "/anime.png";
 import Blog from "/blog.png";
 import APIstore from "/store.png";
 import tiga from "/3d.png";
 import forum from "/Forum.png";
 import dnd from "/dnd.png";
 import CRUD_IMG from "/crud_image.png";
-import video_call from "/video_call.png";
+
 import CodeDemo from "@/component/Demo";
 import {PReact, ReactNative, pythonCode} from "./file";
 import JS from "/js.png";
 
 export const Project = [
-  {
-    id: 1,
-    title: "AnimeList",
-    desc: "this is my another project i try fullstack beginner next js creating anime list",
-    img: Animelist,
-    link: "https://anime-list-blue-six.vercel.app/",
-  },
   {
     id: 2,
     title: "Blog",
@@ -45,13 +37,6 @@ export const Project = [
     desc: " this is my another project i try make website like a forum ",
     img: forum,
     link: "https://forum-jade.vercel.app/",
-  },
-  {
-    id: 6,
-    title: "video call app",
-    desc: " this is my another project i try make a video call group website using zegocloud",
-    img: video_call,
-    link: "https://group-call.vercel.app/",
   },
 ];
 

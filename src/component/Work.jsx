@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import {
   AlertDialog,
@@ -98,7 +99,7 @@ const Work = () => {
             );
           })}
         </div>
-        <AnWork AnProject={AnProject} />
+        {/* <AnWork AnProject={AnProject} /> */}
       </div>
     </>
   );
