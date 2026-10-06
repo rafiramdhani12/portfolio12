@@ -1,64 +1,17 @@
-import {Button} from "@/components/ui/button";
+
 import foto from "../assets/muka.jpg";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
-import {useTranslation} from "react-i18next";
+
 
 const About = () => {
-  const {t} = useTranslation();
 
-  // const changeLang = (lng) => {
-  //   i18n.changeLanguage(lng);
-  // };
 
   return (
-    <div className=" max-w-[1200px] mx-auto my-12">
+    <div className=" max-w-[1200px] mx-auto my-12" id="About">
       <div className="md:grid md:grid-cols-2 sm:py-16">
         <div className="mt-4 md:mt-0 text-left flex">
           <div className="my-auto mx-6">
             <h2 className="text-4xl font-bold mb-4 primary-color">About Me</h2>
-            <p className="text-base lg:text-lg text-white">{t("about")}</p>
-            <div className="mt-5 ">
-              <Button>
-                <AlertDialog>
-                  <AlertDialogTrigger>More</AlertDialogTrigger>
-                  <AlertDialogContent>
-                    <AlertDialogHeader>
-                      <AlertDialogTitle>
-                        This is a few framework what i learn it now
-                      </AlertDialogTitle>
-                      <AlertDialogDescription>
-                        <div className="flex my-10 flex-wrap gap-4">
-                          <div className="bg-black text-white p-5 flex gap-4">
-                            <img src="/nextjs.png" alt="" width={100} />
-                            <p className="text-xl my-auto">Next js</p>
-                          </div>
-                          <div className="bg-black text-white p-5 flex gap-4">
-                            <img src="/laravel.png" alt="" width={100} />
-                            <p className="text-xl my-auto">Laravel</p>
-                          </div>
-                          <div className="bg-black text-white p-5 flex gap-4">
-                            <img src="/vite.png" alt="" width={90} />
-                            <p className="text-xl my-auto">vite</p>
-                          </div>
-                        </div>
-                      </AlertDialogDescription>
-                    </AlertDialogHeader>
-                    <AlertDialogFooter>
-                      <AlertDialogAction>Back</AlertDialogAction>
-                    </AlertDialogFooter>
-                  </AlertDialogContent>
-                </AlertDialog>
-              </Button>
-            </div>
+            <p className="text-base lg:text-lg text-white">My name is Rafi Ramdhani, im 5th semester student in universitas bina sarana informatika I am very interested in technology, enjoy learning and developing, and I am eager to explore new things</p>
           </div>
         </div>
         <img

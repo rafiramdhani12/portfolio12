@@ -1,24 +1,10 @@
 import {useState} from "react";
-import {useTranslation} from "react-i18next";
 import {AiOutlineClose, AiOutlineMenu} from "react-icons/ai";
 import {Link} from "react-router-dom";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-
-  const {i18n} = useTranslation();
-
-  const changeLang = (lng) => {
-    i18n.changeLanguage(lng);
-  };
 
   const handleNav = () => {
     setNav(!nav);
@@ -31,35 +17,13 @@ const Navbar = () => {
         </h1>
         <ul className="hidden md:flex">
           <li className="p-5">
-            <Link to={"/about"}>About</Link>
+            <a href="#About">About</a>
           </li>
           <li className="p-5">
-            <Link to={"/work"}>Work</Link>
+            <a href="#Work">Work</a>
           </li>
           <li className="p-5">
-            <Link to={"/contact"}>Contact</Link>
-          </li>
-          <li className="p-5">
-            <Link to={"https://new-3d-portfolio-five.vercel.app/"}>3D</Link>
-          </li>
-          <li className="p-5">
-            <DropdownMenu>
-              <DropdownMenuTrigger>
-                <img src="./google.png" alt="" width={25} />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <DropdownMenuLabel>Choose Language</DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>
-                  {" "}
-                  <button onClick={() => changeLang("en")}>English</button>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  {" "}
-                  <button onClick={() => changeLang("id")}>Indonesian</button>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <a href="#Contact">Contact</a>
           </li>
         </ul>
 
@@ -76,37 +40,15 @@ const Navbar = () => {
             <Link to={"/"}>Rafi Ramdhani</Link>{" "}
           </h1>
           <ul className="p-8 text-2xl">
-            <li className="p-2">
-              <Link to={"/about"}>About</Link>
-            </li>
-            <li className="p-2">
-              <Link to={"/work"}>Work</Link>
-            </li>
-            <li className="p-2">
-              <Link to={"/contact"}>Contact</Link>
-            </li>
-            <li className="p-2">
-              <Link to={"https://new-3d-portfolio-five.vercel.app/"}>3D</Link>
-            </li>
-            <li className="p-2">
-              <DropdownMenu>
-                <DropdownMenuTrigger>
-                  <img src="/google.png" alt="" width={45} className="mt-2" />
-                </DropdownMenuTrigger>
-
-                <DropdownMenuContent>
-                  <DropdownMenuItem>
-                    {" "}
-                    <button onClick={() => changeLang("en")}>English</button>
-                  </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>
-                    {" "}
-                    <button onClick={() => changeLang("id")}>Indonesian</button>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </li>
+          <li className="p-5">
+            <a href="#About">About</a>
+          </li>
+          <li className="p-5">
+            <a href="#Work">Work</a>
+          </li>
+          <li className="p-5">
+            <a href="#Contact">Contact</a>
+          </li>
           </ul>
         </div>
       </div>

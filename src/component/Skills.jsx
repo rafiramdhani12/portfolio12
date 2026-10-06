@@ -1,7 +1,6 @@
 import js from "../assets/js.png";
 import React_js from "../assets/react.png";
 import Node_js from "../assets/node.png";
-import PHP from "../assets/PHP.png";
 const Skills = () => {
   return (
     <div
@@ -21,10 +20,6 @@ const Skills = () => {
       <div className="flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]">
         <img src={Node_js} alt="" width={100} height={100} />
         <p className="mt-2">Node js</p>
-      </div>
-      <div className="flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]">
-        <img src={PHP} alt="" width={100} height={100} />
-        <p className="mt-2">PHP</p>
       </div>
     </div>
   );
